@@ -4,7 +4,7 @@
  
 ## Overview
 
-Lightweight file uploading services powered by nodejs
+Lightweight file uploading services powered by nodejs and multer
 
 # User Story
  
