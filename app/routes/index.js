@@ -1,12 +1,13 @@
 'use strict';
 var path = process.cwd();
-var SearchHandler = require(path + '/app/controllers/searchHandler.server.js');
+var multer  = require('multer');
+var upload = multer({ dest: './uploads' });
 
 module.exports = function (app) {
-	var searchHandler = new SearchHandler();
 	app.get('/', function (req, res) {
   		res.sendFile(path + '/public/index.html');
-	});
-	app.get('/imagesearch/:searchQuery', searchHandler.searchImage);
-	app.get('/latest/imagesearch', searchHandler.getLatestSearches);
-};
+	}); 
+	app.post('/', upload.single('anyFile'), function (req, res) {
+ 		res.json({"The size of your file in bit is" : req.file.size}); 
+	})
+ };

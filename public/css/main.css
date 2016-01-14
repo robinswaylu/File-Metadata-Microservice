@@ -6,25 +6,24 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #FCFCFC;
+  background: #EEEEEE;
   background-size: cover;
-  color:black;
-  font-family: 'Vollkorn', serif;
+  color:#6C7A89;
+  font-family: 'Helvetica', serif;
   text-align: center;
   font-size:1.5em;
 }
 
 .wrapper{
   margin: 0;
-  padding: 1% 5%;
+  padding:5%;
 }
-p, li{
+p{
   font-family: 'arial', sans-serif;
-  font-size: 0.7em;
+  font-size: 1em;
   text-align:left;
   margin:0 auto; 
-  width:50%;
-  
+  width:60%;
 } 
 
 .header img { 
@@ -37,3 +36,7 @@ p, li{
   position:relative;
   top: -10px;
 } 
+
+input {
+  margin: 5%;
+}
